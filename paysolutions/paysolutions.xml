@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="1.5" type="plugin" group="vmpayment" >
+    <name>paysolutions</name>
+    <creationDate>September 29 2014</creationDate>
+    <author>Wilawan</author>
+    <authorUrl>http://www.thaiepay.com</authorUrl>
+    <copyright>Copyright (C) 2014 PAYSOLUTIONS. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>2.5.0</version>
+    <description><![CDATA[<a href="http://www.thaiepay.com" target="_blank">paysolutions</a> a varety of payment channels. ]]>
+    </description>
+
+    <files>
+	<filename plugin="paysolutions">paysolutions.php</filename>
+    </files>
+    <params addpath="/administrator/components/com_virtuemart/elements">
+	<param type="vmjpluginwarning" />
+	<param type="spacer" default="paysolutions" level="level1" />
+	<param type="spacer" default="" level="level1" />
+
+	<param type="text" name="paysolutions_account" label="paysolutions MerchantID"
+             default="" description="Please enter your MerchantID for recieve money." />
+	
+	<param name="demo" type="radio" default="https://www.thaiepay.com/epaylink/payment.aspx" label="demo server" description="" >
+	    <option value="https://www.thaiepay.com/epaylink/payment.aspx">COM_VIRTUEMART_NO</option>
+	   <!--- <option value="https://www.thaiepay.com/epaylink/payment.aspx">COM_VIRTUEMART_YES</option>-->
+	</param>
+
+    </params>
+
+
+</install>
